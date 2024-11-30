@@ -11,7 +11,6 @@ cd AI_ChatBot
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python main.py
 ```
 
 
@@ -23,5 +22,4 @@ cd AI_ChatBot
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-python main.py
 ```

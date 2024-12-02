@@ -55,10 +55,16 @@ class TwitchBot(commands.Bot):
         user = ctx.author.name
 
 
-        if ctx.message.content[0] == "!":
-            user_message = ctx.message.content[len("!chat ") :].strip()
-        else:
-            user_message = ""
+        
+        # !chat prefix to use bot
+        # if ctx.message.content[0] == "!":
+        #     user_message = ctx.message.content[len("!chat ") :].strip()
+        # else:
+        #     user_message = ""
+
+        # works on every message
+        user_message = ctx.message.content.strip()
+
 
         new_user_message = f"{colorama.Fore.RED}{user}: {colorama.Fore.WHITE}{user_message}"
         print(new_user_message)
